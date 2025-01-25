@@ -1,13 +1,11 @@
 import random
 
-# from brain_games.cli import generate_number
-
 RULES = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
-def generate_number():
+def generate_number(x=1, y=100):
     """Generate random number"""
-    return random.randint(1, 100)
+    return random.randint(x, y)
 
 
 def make_question():

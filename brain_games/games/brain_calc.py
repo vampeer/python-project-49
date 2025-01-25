@@ -5,9 +5,6 @@ from brain_games.games.brain_even import generate_number
 RULES = "What is the result of the expression?"
 
 
-subtract = lambda x, y: x - y
-
-
 operations = {
     "+": operator.add,
     "-": operator.sub,
