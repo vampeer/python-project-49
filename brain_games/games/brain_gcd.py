@@ -1,5 +1,4 @@
 import math
-import random
 
 from brain_games.games.brain_even import generate_number
 
