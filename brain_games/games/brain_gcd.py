@@ -9,7 +9,7 @@ RULES = "Find the greatest common divisor of given numbers."
 def make_question():
     first_num = generate_number()
     second_num = generate_number()
-    question = f"Question: {first_num} and {second_num}"
+    question = f"Question: {first_num} {second_num}"
     answer = correct_answer(first_num, second_num)
     return (question, answer)
 
