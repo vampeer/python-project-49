@@ -15,5 +15,16 @@ build-backend = "hatchling.build"
 [tool.hatch.build.targets.wheel]
 packages = ["brain_games"]
 
+[dependency-groups]
+dev = [
+    "ruff>=0.9.3",
+    "pytest>=8.3.4",
+]
+
 [project.scripts]
 brain-games = "brain_games.scripts.brain_games:main"
+brain-even = "brain_games.scripts.brain_even:main"
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
